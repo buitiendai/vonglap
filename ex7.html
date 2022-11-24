@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính trung bình các số chia hết cho 6</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập a");
+        let b = +prompt("Nhập b");
+        let x = 0;
+        let y = 0;
+        let tbc = 0;
+        for (let i=a; i<=b; i++) {
+            if(i % 6 == 0) {
+                x++;
+                y+=i;
+            }
+        }
+        tbc = y/x;
+        document.write(tbc);
+    </script>
+</body>
+</html>
