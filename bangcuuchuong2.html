@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>In ra Bảng Cửu Chương từ 2 tới 9</title>
 </head>
 <body>
@@ -29,3 +30,36 @@
     </script>
 </body>
 </html>
+=======
+    <title>Bảng Cửu Chương</title>
+</head>
+<body>
+    <h2>BẢNG CỬU CHƯƠNG</h2>
+</body>
+</html>
+<script>
+    let bcc;
+    bcc = "<table border='1' width='50%' cellspacing='0' cellpadding='3'>"
+    // for(let j = 1; j <= 10; j++) {
+    //     bcc = bcc + "<tr>";
+    //     for (let i = 2; i <= 9; i++) {
+    //         bcc = bcc + "<td>" + i + " x " + j + " = " + i * j + "</td>";
+    //     }
+    //     bcc = bcc + "</tr>";
+    // }
+    let i = 2;
+    let j = 1;
+    while(j <= 10){
+        bcc = bcc + "<tr>";
+        while(i <= 9){
+            bcc = bcc + "<td>" + i + " x " + j + " = " + i * j + "</td>";
+            i++;
+        }
+        bcc = bcc + "</tr>";
+        j++;
+        i = 2;
+    }
+    bcc = bcc + "</table>";
+    document.write(bcc); 
+</script>
+>>>>>>> b93a788deb4b30a5e5743095b781213aaad8eea3
