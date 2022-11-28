@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game đoán số</title>
+</head>
+<body>
+    <button onclick="timso()">Chơi</button>
+</body>
+</html>
+<script>
+    function timso() {
+        let num;
+        do {
+            num = prompt("Hãy nhập vào số có 2 chữ số");
+            if (num < 50) {
+                alert("Số bạn dự đoán đang bé hơn");
+            }
+            if(num > 50) {
+                alert("Số bạn dự đoán đang lớn hơn");
+            }
+        } while( num < 50 || num > 50)
+         alert("Chúc mừng bạn đã đoán đúng số: " + num);
+    }
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lấy nhiệt độ hiện tại được nhập vào</title>
+</head>
+<body>
+    <script>
+        let temp = +prompt("Nhiệt độ hiện tại là: ");
+        do{
+            if(temp > 100) {
+                alert('Bạn cần giảm nhiệt độ xuống');
+            }else if(temp < 20) {
+                alert('Bạn cần tăng nhiệt độ lên');
+            }else {
+                alert('Nhiệt độ này phù hợp với bạn');
+            }
+        }while(temp < 20 && temp > 100)
+    </script>
+</body>
+</html>
