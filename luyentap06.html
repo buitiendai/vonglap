@@ -7,6 +7,16 @@
     <title>Tính tổng của 30 số tự nhiên đầu tiên chia hết cho 7</title>
 </head>
 <body>
-
+    <script>
+        let n = 0; // số tự nhiên
+        let total = 0; // tổng của các số tự nhiên
+        for(let i = 0; n < 30; i++) {  // i chạy từ 0, i++
+            if(i % 7 == 0) { // nếu i chia hết cho 7
+                total += i; // tổng sẽ cộng với i
+                n++; // n tiếp tục tăng và chạy lại vòng lặp cho tới khi nào n = 30 thì dừng lại.
+            }
+        }
+        document.write(total);
+    </script>
 </body>
 </html>
